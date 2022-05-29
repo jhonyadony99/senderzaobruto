@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\USUARIO\Documents\LUTOBIXA\111S 1.6.5.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{208B7350-F0DC-4F41-9E7B-E4480C211C00}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SS 1.6.5</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PWFrameWork\WinApi.cs" />
+    <Compile Include="Flay_Haker\ProcessList.cs" />
+    <Compile Include="Flay_Haker\ClientWindow.cs" />
+    <Compile Include="Flay_Haker\ClasePW.cs" />
+    <Compile Include="PerfectWorld\PacketSenderNew.cs" />
+    <Compile Include="Read_Write_ProcessMemory\Memoria.cs" />
+    <Compile Include="Skill_Sender\Form1.cs" />
+    <Compile Include="Skill_Sender\MemFunctions.cs" />
+    <Compile Include="Skill_Sender\Memory.cs" />
+    <Compile Include="Skill_Sender\PacketSender.cs" />
+    <Compile Include="Skill_Sender\Program.cs" />
+    <Compile Include="Skill_Sender\ADR.cs" />
+    <Compile Include="Skill_Sender\Packet.cs" />
+    <Compile Include="Skill_Sender\SenderON.cs" />
+    <Compile Include="Skill_Sender\Properties\Resources.cs" />
+    <Compile Include="Skill_Sender\Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Skill_Sender\Form1.resx" />
+    <EmbeddedResource Include="Skill_Sender\Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
